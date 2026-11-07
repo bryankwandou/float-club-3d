@@ -1,0 +1,69 @@
+:root {
+  /* Light Mode Palette */
+  --color-primary: #18b7c4;
+  --color-primary-variant: #0e94a8;
+  --color-secondary: #f47a2a;
+  --color-background: #18b7c4;
+  --color-surface: rgba(255, 255, 255, 0.28);
+  --color-on-primary: #ffffff;
+  --color-on-surface: #0b3b42;
+  --color-error: #dc2626;
+  --color-on-error: #ffffff;
+  --color-outline: rgba(11, 59, 66, 0.24);
+  --color-sun-yellow: #fde047;
+
+  /* Typography Scale */
+  --font-display: 'Fredoka', 'Nunito', 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 40px;
+  --text-5xl: 48px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #15a6b3;
+    --color-primary-variant: #0b7d8e;
+    --color-secondary: #ff8533;
+    --color-background: #129aa7;
+    --color-surface: rgba(11, 59, 66, 0.35);
+    --color-on-primary: #ffffff;
+    --color-on-surface: #072c32;
+    --color-error: #ef4444;
+    --color-on-error: #ffffff;
+    --color-outline: rgba(11, 59, 66, 0.32);
+    --color-sun-yellow: #fde047;
+  }
+}
+
+.font-float-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.font-float-body {
+  font-family: var(--font-sans);
+}
+
+.text-pool-headline {
+  color: #ffffff;
+  text-shadow:
+    0 5px 0 rgba(9, 62, 70, 0.34),
+    0 12px 28px rgba(7, 50, 58, 0.22);
+}
+
+.text-pool-headline-outline {
+  color: #ffffff;
+  -webkit-text-stroke: 2px #0b3b42;
+  paint-order: stroke fill;
+  text-shadow:
+    0 4px 0 #0b3b42,
+    0 10px 22px rgba(7, 50, 58, 0.28);
+}
